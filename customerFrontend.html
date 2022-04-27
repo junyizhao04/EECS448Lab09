@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Web Store</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Exercise 3: Web Store</h1>
+            <p>Choose any item that you want, then check out!</p>
+        </header>
+
+        <main>
+			<div id="background"></div>
+			<form action="customerBackend.php" method="post">
+				<b>birds:</b><br>
+					Fried Chicken, $5<br> 
+					Quantity: <input type="number" id="chicken" name="chicken" min="0"><br><br>
+
+					Duck Confit, $8<br> 
+					Quantity: <input type="number" id="duck" name="duck" min="0"><br><br>
+
+					BBQ Goose, $7<br> 
+					Quantity: <input type="number" id="goose" name="goose" min="0"><br><br>
+
+				<b>Enter in your information:</b><br>
+					Username: <input type="text" name="username" id="username"><br>
+					Password: <input type="text" name="password" id="password"><br><br>
+
+				<b>Choose your shipping option:</b><br>
+					<input type="radio" name="shipping" id="free" value="Free 7 Day">Free 7 Day<br>
+					<input type="radio" name="shipping" id="50" value="$50 Over Night">$50.00 Over Night<br>
+					<input type="radio" name="shipping" id="5" value="$5 Three Day">$5.00 Three Day<br>
+				<input type="submit" id="submit" value="Submit Quiz">
+				<input type="reset">
+			</form>
+        </main>
+
+        <footer> Junyi Zhao for EECS 448 Lab 9 </footer>
+        <script src="formChecker.js"></script>
+    </body>
+</html>
